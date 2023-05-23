@@ -125,9 +125,6 @@
 			$("#modal_body").html(data);
 		});
 	});
-
-
-
 </script>
 
 @endsection

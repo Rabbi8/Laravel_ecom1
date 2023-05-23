@@ -170,6 +170,7 @@ return [
         Yoeunes\Toastr\ToastrServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         Jorenvh\Share\Providers\ShareServiceProvider::class,
+        LaravelCaptcha\Providers\LaravelCaptchaServiceProvider::class,
         /*
          * Application Service Providers...
          */

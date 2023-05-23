@@ -8,6 +8,9 @@ use Cart;
 use App\Models\Product;
 use Auth;
 use DB;
+use App\Models\User;
+use Notification;
+use App\Notifications\OrderNotification;
 class CartController extends Controller
 {
     //add to cart method
@@ -132,6 +135,25 @@ class CartController extends Controller
         DB::table('wishlists')->where('id',$id)->delete();
         $notification=array('messege' => 'Successfully Deleted!', 'alert-type' => 'success');
         return redirect()->back()->with($notification);
+    }
+
+
+    public function sendNotification($value='')
+    {
+        $user = User::first();
+  
+        $details = [
+            'greeting' => 'Hi Artisan',
+            'body' => 'This is my first notification from ItSolutionStuff.com',
+            'thanks' => 'Thank you for using ItSolutionStuff.com tuto!',
+            'actionText' => 'View My Site',
+            'actionURL' => url('/'),
+            'order_id' => 102
+        ];
+  
+        Notification::send($user, new OrderNotification($details));
+   
+        dd('done');
     }
 
 }

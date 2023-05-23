@@ -39,7 +39,11 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-
+  @foreach(auth()->user()->unreadNotifications as $notification)
+    <a href="#" class="dropdown-item">
+      {{$notification}}
+    </a>
+  @endforeach
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
