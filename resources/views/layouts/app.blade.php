@@ -115,9 +115,9 @@
                 <div class="row">
 
                     <!-- Logo -->
-                    <div class="col-lg-2 col-sm-3 col-3 order-1">
+                    <div class="col-lg-3 col-sm-3 col-3 order-1">
                         <div class="logo_container">
-                            <div class="logo"><a href="{{ url('/') }}">LearnHun</a></div>
+                            <div class="logo"><a href="{{ url('/') }}"><img src="{{ $setting->logo }}" alt="logo"></a></div>
                         </div>
                     </div>
 
@@ -153,7 +153,7 @@
                         $wishlist=DB::table('wishlists')->where('user_id',Auth::id())->count();
                     @endphp
                     <!-- Wishlist -->
-                    <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
+                    <div class="col-lg-3 col-9 order-lg-3 order-2 text-lg-left text-right">
                         <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
                             <div class="wishlist d-flex flex-row align-items-center justify-content-end">
                                 <div class="wishlist_icon"><img src="{{ asset('public/frontend') }}/images/heart.png" alt=""></div>
