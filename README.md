@@ -1,14 +1,14 @@
-## Admin panel
+# Admin panel
 
 
-### "/admin-login"
+### Url:  "/admin-login"
 #### Email: admin@gmail.com
 #### Password: 12345678
 
 
 
 
-## Customer panel
+# Customer panel
 
 
 
