@@ -13,7 +13,7 @@
 		      <form action="{{ route('login') }}" method="post">
 		      	@csrf
 		        <div class="input-group mb-3">
-		          <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="email">
+		          <input id="login_email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="email">
 		          <div class="input-group-append">
 		            <div class="input-group-text">
 		              <span class="fas fa-envelope"></span>
@@ -29,7 +29,7 @@
 		            </span>
 		        @enderror
 		        <div class="input-group mb-3">
-		           <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="password">
+		           <input id="login_password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="password">
 		          <div class="input-group-append">
 		            <div class="input-group-text">
 		              <span class="fas fa-lock"></span>
@@ -51,15 +51,16 @@
 		            </div>
 		          </div>
 		          <!-- /.col -->
-		          <div class="col-4">
+		          <div class="col-12">
 		            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+					<button id="login_form_fill_up" class="btn btn-info btn-block">Form Fill up</button>
 		          </div>
 		          <!-- /.col -->
 		        </div>
 		      </form>
-		      <p class="mb-1">
+		      {{-- <p class="mb-1">
 		        <a href="#">I forgot my password</a>
-		      </p>
+		      </p> --}}
 		    </div>
 		    <!-- /.card-body -->
 		  </div>

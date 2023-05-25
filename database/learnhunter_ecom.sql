@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Sep 19, 2022 at 04:11 AM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 7.4.19
+-- Host: 127.0.0.1:3309
+-- Generation Time: May 25, 2023 at 07:58 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `laravel_ecommerce_8`
+-- Database: `learnhunter_ecom`
 --
 
 -- --------------------------------------------------------
@@ -776,7 +776,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `currency`, `phone_one`, `phone_two`, `main_email`, `support_email`, `logo`, `favicon`, `address`, `facebook`, `twitter`, `instagram`, `linkedin`, `youtube`, `created_at`, `updated_at`) VALUES
-(1, '৳', '01961363543', '01961363543', 'ecommerce@gmail.com', 'supportecommerce@gmail.com', 'public/files/setting/60c0c95167e6a.png', 'public/files/setting/60c0c9931978f.png', 'DHaka Motijheel arambag', 'http://learnhunter.live/', 'http://learnhunter.live/', 'http://learnhunter.live/', 'http://learnhunter.live/', 'http://learnhunter.live/', NULL, NULL);
+(1, '৳', '01639-780935', '01785-707825', 'sample@gmail.com', 'samplesupport@gmail.com', 'public/files/setting/60c0c95167e6a.png', 'public/files/setting/60c0c9931978f.png', 'Mirpur-12', '', '', '', '', '', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -926,13 +926,13 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `phone`, `is_admin`, `role_admin`, `avatar`, `provider`, `provider_id`, `access_token`, `remember_token`, `category`, `product`, `offer`, `order`, `blog`, `pickup`, `ticket`, `contact`, `report`, `setting`, `userrole`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'admin@gmail.com', NULL, '$2y$10$P5bJnBoYNvVz/WXnMfCCD.d7E/qxoVjJEFUBGHhCLzm8z18vCfeTq', '01961363543', 1, 0, NULL, NULL, NULL, NULL, NULL, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, NULL, NULL),
+(1, 'Admin', 'admin@gmail.com', NULL, '$2a$12$DLx2nHq06Ezg4EB1NyeaAuKmiSnFWTtCx.23PULbpEb8guTudWury', '01961363543', 1, 0, NULL, NULL, NULL, NULL, NULL, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, NULL, NULL),
 (2, 'Alester Cook', 'customer@gmail.com', NULL, '$2y$10$P5bJnBoYNvVz/WXnMfCCD.d7E/qxoVjJEFUBGHhCLzm8z18vCfeTq', '019999999999', 0, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL),
-(4, 'parven begum', 'parvenbegum2020@gmail.com', NULL, '', NULL, NULL, NULL, 'https://lh3.googleusercontent.com/a/AATXAJyUNtL5xzP1sDSgIC5NkeMERnbRRCKOtJToXkUS=s96-c', 'google', '116032158511978428058', 'ya29.a0ARrdaM_-A1ch12BbutLVrfvIpfAA_8WM-9bbKO_xI9Qwj4QDEapglAFcqz4OBmyC1opxqGY2FEtLh5r7zuajyrhSJyovmwE7hU5ZSPXe2WBUviHgHkibz7axfuEgki-dB2ayGzjEgVFBR8LiS3txB1tTCUis', 'rq0WAzI5IzssVPBRTBhVrql9LQtz2xC9GvG08oi68Oj4bfD06T1WBh5wIJVx', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2021-11-01 08:32:35', '2021-11-01 08:33:04'),
-(5, 'Mamun', 'mamun@gmail.com', NULL, '$2y$10$P5bJnBoYNvVz/WXnMfCCD.d7E/qxoVjJEFUBGHhCLzm8z18vCfeTq', NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, 1, 1, 1, 1, 1, 1, 1, 1, 1, NULL, NULL, NULL, NULL),
-(6, 'SI Sohel', 'sohidulislam353@gmail.com', NULL, '', NULL, NULL, NULL, 'https://lh3.googleusercontent.com/a-/AOh14GhQLxI9Vp38YyCWXp_UZjw6P8koNO7YUliQK5p6_A=s96-c', 'google', '109254826656088542444', 'ya29.a0ARrdaM-WbUjz2RVoD5syZxuNyE5-tjoTf0GIjmjGp2PLvWH5V0fuKZuj0PwTxPIWirTx8F68wXb7u1ix97wAgMR9OegLGWn4_GRFIS4-q3H5jLttQAoS-8io_iSOYvPg-von08-fs8gJZ60gxlTS_B_hA3Tq', 'SCiy4RBab4rdSaqDoWTFb993QlRZrS9443QX8i0oEfM8c2Ap2nUhp4r424QB', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2021-12-06 06:28:55', '2021-12-06 06:28:55'),
-(7, 'কাকতাড়ুয়া', 'kaktarua44@gmail.com', NULL, '', NULL, NULL, NULL, 'https://lh3.googleusercontent.com/a-/AOh14Gik_C4naeFI4I_XL7pIF_r5uCxOP_geRg0jJbe2Vg=s96-c', 'google', '101810011445642054229', 'ya29.a0ARrdaM-0_RtNbnr3mVwYQSsnVEiyX-dUCBiOKrgXpt0AOVNiDZ_n7M1iExzz_C9uQbeIsuDCvbpqFeEcPMhDHAeKxYQS-H4C84yuuucqmjQ5Wq9UssAX-iLtnOdilxQNelf_D5dKRjaOTfBX9Idt2zMChATn', 'PxAAVrH9xjOVc4ONaxFHe3Ve93LeDKoGheQ73hf0YkUQqLHUFWGhWUpF8dr5', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2021-12-06 06:29:20', '2021-12-06 06:29:20'),
-(8, 'Example', 'example1@gmail.com', NULL, '$2y$10$sv.YSWCBVufksFkLNZ84r.ey/auwJEseZdHWbwFf89lwLa8n7eJI2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2022-09-16 13:08:41', '2022-09-16 13:08:41');
+(4, 'parven begum', 'parvenbegum2020@gmail.com', NULL, '$2a$12$DLx2nHq06Ezg4EB1NyeaAuKmiSnFWTtCx.23PULbpEb8guTudWury', NULL, NULL, NULL, 'https://lh3.googleusercontent.com/a/AATXAJyUNtL5xzP1sDSgIC5NkeMERnbRRCKOtJToXkUS=s96-c', 'google', '116032158511978428058', 'ya29.a0ARrdaM_-A1ch12BbutLVrfvIpfAA_8WM-9bbKO_xI9Qwj4QDEapglAFcqz4OBmyC1opxqGY2FEtLh5r7zuajyrhSJyovmwE7hU5ZSPXe2WBUviHgHkibz7axfuEgki-dB2ayGzjEgVFBR8LiS3txB1tTCUis', 'rq0WAzI5IzssVPBRTBhVrql9LQtz2xC9GvG08oi68Oj4bfD06T1WBh5wIJVx', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2021-11-01 08:32:35', '2021-11-01 08:33:04'),
+(5, 'Mamun', 'mamun@gmail.com', NULL, '$2a$12$DLx2nHq06Ezg4EB1NyeaAuKmiSnFWTtCx.23PULbpEb8guTudWury', NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, 1, 1, 1, 1, 1, 1, 1, 1, 1, NULL, NULL, NULL, NULL),
+(6, 'SI Sohel', 'sohidulislam353@gmail.com', NULL, '$2a$12$DLx2nHq06Ezg4EB1NyeaAuKmiSnFWTtCx.23PULbpEb8guTudWury', NULL, NULL, NULL, 'https://lh3.googleusercontent.com/a-/AOh14GhQLxI9Vp38YyCWXp_UZjw6P8koNO7YUliQK5p6_A=s96-c', 'google', '109254826656088542444', 'ya29.a0ARrdaM-WbUjz2RVoD5syZxuNyE5-tjoTf0GIjmjGp2PLvWH5V0fuKZuj0PwTxPIWirTx8F68wXb7u1ix97wAgMR9OegLGWn4_GRFIS4-q3H5jLttQAoS-8io_iSOYvPg-von08-fs8gJZ60gxlTS_B_hA3Tq', 'SCiy4RBab4rdSaqDoWTFb993QlRZrS9443QX8i0oEfM8c2Ap2nUhp4r424QB', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2021-12-06 06:28:55', '2021-12-06 06:28:55'),
+(7, 'Jahid', 'kaktarua44@gmail.com', NULL, '$2a$12$DLx2nHq06Ezg4EB1NyeaAuKmiSnFWTtCx.23PULbpEb8guTudWury', NULL, NULL, NULL, 'https://lh3.googleusercontent.com/a-/AOh14Gik_C4naeFI4I_XL7pIF_r5uCxOP_geRg0jJbe2Vg=s96-c', 'google', '101810011445642054229', 'ya29.a0ARrdaM-0_RtNbnr3mVwYQSsnVEiyX-dUCBiOKrgXpt0AOVNiDZ_n7M1iExzz_C9uQbeIsuDCvbpqFeEcPMhDHAeKxYQS-H4C84yuuucqmjQ5Wq9UssAX-iLtnOdilxQNelf_D5dKRjaOTfBX9Idt2zMChATn', 'PxAAVrH9xjOVc4ONaxFHe3Ve93LeDKoGheQ73hf0YkUQqLHUFWGhWUpF8dr5', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2021-12-06 06:29:20', '2021-12-06 06:29:20'),
+(8, 'Example', 'example1@gmail.com', NULL, '$2a$12$DLx2nHq06Ezg4EB1NyeaAuKmiSnFWTtCx.23PULbpEb8guTudWury', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2022-09-16 13:08:41', '2022-09-16 13:08:41');
 
 -- --------------------------------------------------------
 

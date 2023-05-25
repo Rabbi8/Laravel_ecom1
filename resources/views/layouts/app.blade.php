@@ -307,6 +307,7 @@
 <script type="text/javascript" src="{{ asset('public/backend/plugins/toastr/toastr.min.js') }}"></script>
 
 
+
  <script type="text/javascript" charset="utf-8">
     function cart() {
          $.ajax({
@@ -346,6 +347,9 @@
                 }
         @endif
     </script>
+
+
+
 
 </body>
 
