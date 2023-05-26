@@ -57,12 +57,12 @@ class LoginController extends Controller
              'password' => 'required',
          ]);
 
-         if (auth()->attempt(array('email' =>$request->email ,'password' =>$request->password ))) {
-                
+         
+         if (auth()->attempt(array('email' =>$request->email ,'password' =>$request->password ))) {                
             if (auth()->user()->is_admin==1) {
                 return redirect()->route('admin.home');    
-            }else{  
-                return redirect()->back();
+            }else if(auth()->user()->is_admin==0){  
+               return redirect()->intended();
             }
          }else{
             return redirect()->back()->with('error','Invalid email or password');

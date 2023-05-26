@@ -60,7 +60,7 @@
                             <div class="top_bar_menu">
                                 <ul class="standard_dropdown top_bar_dropdown">
                                     <li>
-                                        <a href="#">Login<i class="fas fa-chevron-down"></i></a>
+                                        <a href="#">Login <i class="fas fa-chevron-down"></i></a>
                                         <ul style="width:300px; padding:10px;">
                                            <div>
                                             <strong>login your account</strong><br>
